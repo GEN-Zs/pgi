@@ -1,0 +1,155 @@
+[15-Apr-2024 08:35:24 UTC] PHP Warning:  unlink(captured_image.jpg): No such file or directory in /home4/pgibhara/public_html/imagePro.php on line 38
+[24-May-2024 10:56:54 UTC] PHP Parse error:  Unclosed '{' on line 378 in /home4/pgibhara/public_html/loggedpage.php on line 600
+[24-May-2024 10:56:57 UTC] PHP Parse error:  Unclosed '{' on line 378 in /home4/pgibhara/public_html/loggedpage.php on line 600
+[24-May-2024 10:56:58 UTC] PHP Parse error:  Unclosed '{' on line 378 in /home4/pgibhara/public_html/loggedpage.php on line 600
+[24-May-2024 10:57:00 UTC] PHP Parse error:  Unclosed '{' on line 378 in /home4/pgibhara/public_html/loggedpage.php on line 600
+[24-May-2024 10:57:01 UTC] PHP Parse error:  Unclosed '{' on line 378 in /home4/pgibhara/public_html/loggedpage.php on line 600
+[24-May-2024 10:57:24 UTC] PHP Parse error:  Unclosed '{' on line 378 in /home4/pgibhara/public_html/loggedpage.php on line 600
+[24-May-2024 10:57:27 UTC] PHP Parse error:  Unclosed '{' on line 378 in /home4/pgibhara/public_html/loggedpage.php on line 600
+[24-May-2024 10:57:54 UTC] PHP Parse error:  Unclosed '{' on line 378 in /home4/pgibhara/public_html/loggedpage.php on line 600
+[24-May-2024 11:14:14 UTC] PHP Parse error:  Unclosed '{' on line 382 in /home4/pgibhara/public_html/loggedpage.php on line 605
+[24-May-2024 11:14:17 UTC] PHP Parse error:  Unclosed '{' on line 382 in /home4/pgibhara/public_html/loggedpage.php on line 605
+[25-May-2024 10:22:57 UTC] PHP Warning:  Undefined array key "name" in /home4/pgibhara/public_html/loggedpage.php on line 309
+[25-May-2024 10:41:34 UTC] PHP Warning:  Undefined array key "name" in /home4/pgibhara/public_html/loggedpage.php on line 309
+[25-May-2024 10:51:39 UTC] PHP Warning:  Undefined array key "name" in /home4/pgibhara/public_html/loggedpage.php on line 309
+[25-May-2024 10:52:48 UTC] PHP Warning:  Undefined array key "name" in /home4/pgibhara/public_html/loggedpage.php on line 309
+[25-May-2024 10:53:47 UTC] PHP Warning:  Undefined array key "name" in /home4/pgibhara/public_html/loggedpage.php on line 309
+[25-May-2024 11:02:00 UTC] PHP Warning:  Undefined array key "name" in /home4/pgibhara/public_html/loggedpage.php on line 309
+[25-May-2024 11:06:15 UTC] PHP Warning:  Undefined array key "name" in /home4/pgibhara/public_html/loggedpage.php on line 309
+[25-May-2024 11:13:14 UTC] PHP Warning:  Undefined array key "name" in /home4/pgibhara/public_html/loggedpage.php on line 309
+[25-May-2024 11:17:56 UTC] PHP Warning:  Undefined array key "name" in /home4/pgibhara/public_html/loggedpage.php on line 309
+[25-May-2024 11:23:34 UTC] PHP Warning:  mkdir(): Permission denied in /home4/pgibhara/public_html/filterpp.php on line 31
+[25-May-2024 11:44:30 UTC] PHP Warning:  mkdir(): Permission denied in /home4/pgibhara/public_html/filterpp.php on line 31
+[25-May-2024 11:44:30 UTC] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home4/pgibhara/public_html/loggedpage.php:315
+Stack trace:
+#0 /home4/pgibhara/public_html/loggedpage.php(381): fetchImageName()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/loggedpage.php on line 315
+[25-May-2024 11:45:57 UTC] PHP Fatal error:  Uncaught Error: Call to a member function bind_param() on bool in /home4/pgibhara/public_html/loggedpage.php:315
+Stack trace:
+#0 /home4/pgibhara/public_html/loggedpage.php(373): fetchImageName()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/loggedpage.php on line 315
+[25-May-2024 11:52:46 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/pgibhara/public_html/loggedpage.php:1) in /home4/pgibhara/public_html/loggedpage.php on line 342
+[25-May-2024 11:53:28 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/pgibhara/public_html/loggedpage.php:1) in /home4/pgibhara/public_html/loggedpage.php on line 342
+[25-May-2024 11:56:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/pgibhara/public_html/loggedpage.php:1) in /home4/pgibhara/public_html/loggedpage.php on line 354
+[25-May-2024 11:58:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/pgibhara/public_html/loggedpage.php:1) in /home4/pgibhara/public_html/loggedpage.php on line 354
+[25-May-2024 12:00:53 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home4/pgibhara/public_html/loggedpage.php:1) in /home4/pgibhara/public_html/loggedpage.php on line 354
+[25-May-2024 12:03:11 UTC] PHP Warning:  mkdir(): Permission denied in /home4/pgibhara/public_html/filterpp.php on line 31
+[25-May-2024 12:03:59 UTC] PHP Warning:  mkdir(): Permission denied in /home4/pgibhara/public_html/filterpp.php on line 31
+[25-May-2024 12:41:34 UTC] PHP Warning:  Trying to access array offset on value of type null in /home4/pgibhara/public_html/filterpp.php on line 53
+[25-May-2024 12:45:04 UTC] PHP Warning:  Trying to access array offset on value of type null in /home4/pgibhara/public_html/filterpp.php on line 53
+[25-May-2024 13:30:28 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:21
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(88): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 21
+[25-May-2024 13:31:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:21
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(88): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 21
+[25-May-2024 13:31:46 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:21
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(88): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 21
+[25-May-2024 13:31:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:21
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(88): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 21
+[25-May-2024 13:39:32 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:21
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(95): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 21
+[25-May-2024 13:39:55 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:21
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(95): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 21
+[25-May-2024 13:43:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:21
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(98): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 21
+[25-May-2024 13:54:31 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:21
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(102): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 21
+[25-May-2024 13:59:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:25
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(108): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 25
+[25-May-2024 14:02:39 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:25
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(108): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 25
+[25-May-2024 14:02:48 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:25
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(108): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 25
+[25-May-2024 14:03:01 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:25
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(108): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 25
+[25-May-2024 14:03:59 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:27
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(120): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 27
+[25-May-2024 14:05:21 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:27
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(119): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 27
+[25-May-2024 14:06:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:27
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(119): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 27
+[25-May-2024 14:06:53 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:27
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(119): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 27
+[25-May-2024 14:10:10 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:27
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(121): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 27
+[25-May-2024 14:12:02 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:31
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(126): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 31
+[25-May-2024 14:14:29 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:31
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(126): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 31
+[25-May-2024 14:15:22 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:35
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(130): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 35
+[25-May-2024 14:18:00 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:3
+Stack trace:
+#0 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 3
+[25-May-2024 14:18:34 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:33
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(128): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 33
+[25-May-2024 14:20:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function finfo_open() in /home4/pgibhara/public_html/filterpp.php:33
+Stack trace:
+#0 /home4/pgibhara/public_html/filterpp.php(128): is_safe_image()
+#1 {main}
+  thrown in /home4/pgibhara/public_html/filterpp.php on line 33

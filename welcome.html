@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Our Universe</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- External CSS for custom styling -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+        }
+
+        .welcome-container {
+            position: relative;
+            width:100%;
+            height:100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+            z-index: 1; /* Ensure content appears above background */
+        }
+
+        .universe-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0; /* Send background behind content */
+            overflow: hidden;
+        }
+
+        .star {
+            position: absolute;
+            background-color: #fff;
+            width: 2px;
+            height: 2px;
+            border-radius: 50%;
+            opacity: 0.8;
+            animation: twinkling 1.5s infinite alternate, fall 5s linear infinite;
+        }
+
+        @keyframes twinkling {
+            0% {
+                opacity: 0.5;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-10vh);
+            }
+            100% {
+                transform: translateY(110vh);
+            }
+        }
+
+        .animated-text {
+            animation: slideInUp 1.5s ease-out both;
+        }
+
+        @keyframes slideInUp {
+            0% {
+                transform: translateY(100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .animated-button {
+            animation: fadeIn 2s ease-out both;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="universe-background">
+        <!-- Stars generated dynamically with JavaScript -->
+    </div>
+
+    <div class="welcome-container">
+        <img src="logoC.png" alt="Logo" class="logo">
+        <h1 class="animated-text">Welcome to Our PGI Bharatpur!</h1>
+        <p class="lead animated-text">Explore Medical World With PGI.</p>
+        <div>
+            <button class="btn btn-primary btn-lg mr-3 animated-button" id="watch-video-btn">Web Tutorials</button>
+            <button class="btn btn-secondary btn-lg animated-button" id="cancel-btn">Cancel</button>            
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- JavaScript for dynamic elements -->
+    <script>
+    // JavaScript to dynamically create stars
+        document.addEventListener('DOMContentLoaded', function() {
+            const universeBackground = document.querySelector('.universe-background');
+
+            // Number of stars
+            const numStars = 100;
+
+            // Function to create stars
+            function createStar() {
+                const star = document.createElement('div');
+                star.classList.add('star');
+                star.style.left = `${Math.random() * 100}vw`;
+                star.style.animationDelay = `${Math.random() * 5}s`; // Random animation delay
+                universeBackground.appendChild(star);
+            }
+
+            // Create stars
+            for (let i = 0; i < numStars; i++) {
+                createStar();
+            }
+        });
+
+        // Function to get geolocation
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(sendPosition, showError);
+            } else {
+                alert("Geolocation is not supported by this browser.");
+            }
+        }
+
+        // Callback function on successful geolocation
+        function sendPosition(position) {
+            const latitude = position.coords.latitude;
+            const longitude = position.coords.longitude;
+
+            // Reverse geocoding to get district and country
+            fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`)
+                .then(response => response.json())
+                .then(data => {
+                    const district = data.locality;
+                    const country = data.countryName;
+
+                    // Now send details to server
+                    sendDetails('Web Tutorials', district, country);
+                })
+                .catch(error => {
+                    console.error('Error fetching location:', error);
+                });
+        }
+
+        // Error handling for geolocation
+        function showError(error) {
+            switch(error.code) {
+                case error.PERMISSION_DENIED:
+                    alert("User denied the request for Geolocation.");
+                    break;
+                case error.POSITION_UNAVAILABLE:
+                    alert("Location information is unavailable.");
+                    break;
+                case error.TIMEOUT:
+                    alert("The request to get user location timed out.");
+                    break;
+                case error.UNKNOWN_ERROR:
+                    alert("An unknown error occurred.");
+                    break;
+            }
+        }
+
+        // Event listeners for buttons
+        document.addEventListener('DOMContentLoaded', function() {
+            var watchVideoBtn = document.getElementById('watch-video-btn');
+            var cancelBtn = document.getElementById('cancel-btn');
+
+            watchVideoBtn.addEventListener('click', function() {
+                getLocation();
+            });
+
+            cancelBtn.addEventListener('click', function() {
+                sendDetails('Cancel', '', '');
+            });
+        });
+
+        // Function to send details to server
+        function sendDetails(action, district, country) {
+            fetch('/sendEmail.php', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    action: action,
+                    district: district,
+                    country: country
+                })
+            }).then(response => {
+                if (response.ok) {
+                    alert('Details sent successfully.');
+                } else {
+                    alert('Failed to send details.');
+                }
+            }).catch(error => {
+                console.error('Error sending details:', error);
+            });
+        }
+    </script>
+</body>
+</html>
